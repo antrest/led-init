@@ -1,0 +1,10 @@
+[Unit]
+Description=Salt Minion Service
+After=network.target
+
+[Service]
+ExecStart=salt-minion -d
+Restart=always
+WorkingDirectory=/root
+User=root
+Group=root
